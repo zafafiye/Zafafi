@@ -1,0 +1,2787 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="معرض زفافي | حكاية فستان في صنعاء: فساتين زفاف ومناسبات، كوش، حلويات وباقات أعراس مع حجز سهل عبر واتساب.">
+<meta name="theme-color" content="#090909">
+<meta property="og:title" content="زفافي | حكاية فستان">
+<meta property="og:description" content="فساتين زفاف وكوش وباقات أعراس في صنعاء — احجزي موعدك عبر واتساب.">
+<link rel="icon" href="assets/brandmark.svg" type="image/svg+xml">
+<title>زفافي |   حكاية فستان — فساتين وكوش الأعراس في صنعاء</title>
+<link href="https://fonts.googleapis.com/css2css2?family=Tajawal:wght@300;400;500;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root {
+  --gold: #d6b66e;
+  --gold-bright: #e8ca85;
+  --gold-light: #f3e2b6;
+  --gold-btn: #c8a65e;
+  --gold-hover: #f2da9e;
+  --gold-border: rgba(214, 182, 110, 0.45);
+  --gold-border-strong: rgba(214, 182, 110, 0.78);
+  --bg-main: #090909;
+  --bg-dark: #101010;
+  --bg-card: #151412;
+  --bg-soft: #1b1815;
+  --cream: #12100e;
+  --pink: #1d1814;
+  --rose: #8b6f35;
+  --dark: #ffffff;
+  --text: #f3ede2;
+  --text-white: #ffffff;
+  --text-light: #d5cbb9;
+  --text-muted: #a69c8b;
+  --shadow: 0 14px 40px rgba(0, 0, 0, 0.65);
+  --whatsapp: #25D366;
+  --whatsapp-btn: #25b85c;
+  --call-btn: #d6b66e;
+  --success: #10b981;
+  --danger: #ef4444;
+}
+
+body.theme-royal {
+  --gold: #d6b66e;
+  --gold-bright: #ecd08d;
+  --gold-light: #f6e7c1;
+  --cream: #0c1324;
+  --pink: #13203d;
+  --bg-card: #111b33;
+  --bg-soft: #172442;
+}
+
+body.theme-sage {
+  --gold: #d6b66e;
+  --gold-bright: #ebd08b;
+  --gold-light: #f4e6c2;
+  --cream: #0f1612;
+  --pink: #18231c;
+  --bg-card: #152019;
+  --bg-soft: #1c2b22;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  background: var(--bg-main);
+  color: var(--text);
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+/* ===== Theme Switcher ===== */
+.theme-switcher {
+  position: fixed;
+  top: 95px;
+  left: 20px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.theme-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  transition: transform 0.3s ease;
+}
+
+.theme-btn:hover {
+  transform: scale(1.14);
+}
+
+.theme-btn.active {
+  border-color: var(--gold-bright);
+  box-shadow: 0 0 0 3px rgba(214, 182, 110, 0.35);
+  transform: scale(1.1);
+}
+
+.theme-gold {
+  background: linear-gradient(135deg, #1b1611, #d6b66e);
+}
+
+.theme-royal {
+  background: linear-gradient(135deg, #1e3a8a, #d6b66e);
+}
+
+.theme-sage {
+  background: linear-gradient(135deg, #2d4637, #d6b66e);
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(12, 11, 10, 0.92);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 4px 28px rgba(0, 0, 0, 0.55);
+  border-bottom: 1px solid var(--gold-border);
+  transition: all 0.3s ease;
+}
+
+.nav-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 14px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Amiri', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--gold-bright);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.logo span {
+  font-size: 14px;
+  font-family: 'Tajawal', sans-serif;
+  color: var(--text-light);
+  font-weight: 500;
+  border-right: 2px solid var(--gold);
+  padding-right: 10px;
+}
+
+.logo i {
+  color: var(--gold-bright);
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--gold-bright);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-bright));
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.admin-link {
+  background: rgba(214, 182, 110, 0.14);
+  color: var(--gold-bright) !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px !important;
+  border: 1px solid var(--gold-border-strong);
+}
+
+.admin-link:hover {
+  background: var(--gold-btn);
+  color: #111 !important;
+}
+
+.admin-link::after {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--gold-bright);
+}
+
+/* ===== Hero ===== */
+.hero {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 25%, rgba(214, 182, 110, 0.16), transparent 45%),
+    linear-gradient(135deg, rgba(10, 9, 8, 0.84), rgba(22, 17, 12, 0.76)),
+    url('assets/images/stage-01.jpg') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 20px 70px;
+  color: white;
+}
+
+.hero-content {
+  max-width: 900px;
+  animation: fadeUp 1.1s ease;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 24px;
+  border: 1px solid var(--gold-border-strong);
+  border-radius: 30px;
+  background: rgba(214, 182, 110, 0.14);
+  color: var(--gold-light);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 22px;
+  backdrop-filter: blur(6px);
+}
+
+.hero h1 {
+  font-family: 'Amiri', serif;
+  font-size: clamp(42px, 6vw, 76px);
+  color: white;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  text-shadow: 0 6px 28px rgba(0, 0, 0, 0.55);
+}
+
+.hero h1 span {
+  color: var(--gold-bright);
+  font-style: italic;
+}
+
+.hero p {
+  font-size: clamp(16px, 2vw, 20px);
+  color: #efe6d8;
+  margin-bottom: 38px;
+  max-width: 740px;
+  margin-inline: auto;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 15px 36px;
+  background: linear-gradient(135deg, var(--gold-bright), #b49146);
+  color: #12100d;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 800;
+  box-shadow: 0 10px 28px rgba(214, 182, 110, 0.35);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(214, 182, 110, 0.5);
+}
+
+.btn-outline {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1.5px solid var(--gold-bright);
+  color: var(--gold-bright);
+  margin-right: 14px;
+  box-shadow: none;
+}
+
+.btn-outline:hover {
+  background: var(--gold-btn);
+  border-color: var(--gold-bright);
+  color: #111;
+}
+
+.btn-sm {
+  padding: 10px 22px;
+  font-size: 14px;
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, var(--danger), #b91c1c);
+  color: #fff;
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 95px 20px;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  font-family: 'Amiri', serif;
+  font-size: clamp(32px, 4vw, 48px);
+  color: var(--gold-bright);
+  margin-bottom: 14px;
+  display: inline-block;
+}
+
+.section-title h2::before,
+.section-title h2::after {
+  content: '✦';
+  color: var(--gold);
+  margin: 0 16px;
+  font-size: 0.65em;
+  vertical-align: middle;
+}
+
+.section-title p {
+  color: var(--text-light);
+  font-size: 18px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ===== About ===== */
+.about {
+  background: var(--bg-dark);
+  border-top: 1px solid rgba(214, 182, 110, 0.16);
+  border-bottom: 1px solid rgba(214, 182, 110, 0.16);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-img {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1.5px solid var(--gold-border-strong);
+}
+
+.about-img img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.about-img:hover img {
+  transform: scale(1.05);
+}
+
+.about-text h3 {
+  font-family: 'Amiri', serif;
+  font-size: 36px;
+  color: var(--gold-bright);
+  margin-bottom: 18px;
+}
+
+.about-text p {
+  margin-bottom: 18px;
+  font-size: 17px;
+  color: var(--text-light);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.stat {
+  text-align: center;
+  padding: 22px 15px;
+  background: var(--bg-card);
+  border-radius: 16px;
+  border: 1px solid var(--gold-border);
+}
+
+.stat h4 {
+  font-size: 34px;
+  color: var(--gold-bright);
+  font-weight: 900;
+}
+
+.stat p {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.catalog-disclaimer {
+  margin-top: 8px !important;
+  font-size: 13px !important;
+  opacity: 0.76;
+}
+.package-summary {
+  max-width: 680px;
+  margin: 0 auto;
+  position: static;
+}
+.package-whatsapp {
+  margin-top: 22px;
+  width: 100%;
+  text-align: center;
+}
+:focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ===== Filter Buttons ===== */
+.filter-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 42px;
+}
+
+.filter-btn {
+  padding: 10px 24px;
+  background: var(--bg-card);
+  color: var(--text-light);
+  border: 1px solid var(--gold-border);
+  border-radius: 25px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  border-color: var(--gold-bright);
+  color: var(--gold-bright);
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, var(--gold-bright), var(--gold-btn));
+  color: #12100d;
+  border-color: var(--gold-bright);
+  box-shadow: 0 6px 20px rgba(214, 182, 110, 0.32);
+}
+
+/* ===== Dress Cards Grid ===== */
+.dress-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 26px;
+}
+
+.dress-card {
+  background: var(--bg-card);
+  border: 1px solid var(--gold-border);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s ease;
+}
+
+.dress-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold-bright);
+}
+
+.dress-card.hidden {
+  display: none;
+}
+
+.dress-card-media {
+  position: relative;
+  aspect-ratio: 3/4;
+  background: var(--bg-main);
+  overflow: hidden;
+}
+
+.dress-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.dress-card:hover .dress-card-media img {
+  transform: scale(1.06);
+}
+
+.dress-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: linear-gradient(135deg, var(--gold-bright), var(--gold-btn));
+  color: #12100d;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.dress-video-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(11, 11, 11, 0.85);
+  color: var(--gold-bright);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid var(--gold-border);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dress-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.dress-card-body h3 {
+  font-family: 'Amiri', serif;
+  font-size: 23px;
+  color: var(--gold-bright);
+  margin-bottom: 8px;
+}
+
+.dress-card-body p {
+  color: var(--text-light);
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.dress-card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.btn-card-view {
+  flex: 1;
+  padding: 10px 14px;
+  background: transparent;
+  color: var(--gold-bright);
+  border: 1px solid var(--gold-border-strong);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.btn-card-view:hover {
+  background: rgba(214, 182, 110, 0.16);
+}
+
+.btn-card-book {
+  flex: 1;
+  padding: 10px 14px;
+  background: linear-gradient(135deg, var(--gold-bright), var(--gold-btn));
+  color: #12100d;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.btn-card-book:hover {
+  filter: brightness(1.07);
+}
+
+/* ===== Gallery (Kouch & Sweets) ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  aspect-ratio: 3/4;
+  border: 1px solid var(--gold-border);
+  background: var(--bg-card);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10, 9, 8, 0.95), transparent 65%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 22px;
+  color: var(--text-white);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay h4 {
+  font-size: 21px;
+  margin-bottom: 6px;
+  color: var(--gold-bright);
+}
+
+.gallery-overlay p {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.gallery-zoom {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 38px;
+  height: 38px;
+  background: var(--gold-btn);
+  color: #12100d;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-weight: bold;
+}
+
+.gallery-item:hover .gallery-zoom {
+  opacity: 1;
+}
+
+/* ===== Lightbox ===== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.lightbox.active {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 85vh;
+  border-radius: 15px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.65);
+  transition: transform 0.3s ease;
+}
+
+.lightbox-content img.zoomed {
+  transform: scale(1.5);
+  cursor: zoom-out;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 44px;
+  height: 44px;
+  background: var(--gold-btn);
+  color: #12100d;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.lightbox-close:hover {
+  transform: rotate(90deg);
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  background: rgba(214, 182, 110, 0.9);
+  color: #12100d;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lightbox-nav:hover {
+  background: var(--gold-bright);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-prev {
+  right: -70px;
+}
+
+.lightbox-next {
+  left: -70px;
+}
+
+.lightbox-caption {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  background: rgba(20, 18, 15, 0.85);
+  border: 1px solid var(--gold-border);
+  padding: 10px 25px;
+  border-radius: 25px;
+  white-space: nowrap;
+}
+
+.lightbox-counter {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  color: var(--gold-bright);
+  background: rgba(20, 18, 15, 0.85);
+  border: 1px solid var(--gold-border);
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.lightbox-zoom {
+  position: absolute;
+  top: -50px;
+  right: 85px;
+  width: 40px;
+  height: 40px;
+  background: rgba(214, 182, 110, 0.9);
+  color: #12100d;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ===== Services ===== */
+.services {
+  background: linear-gradient(135deg, #11100e, #1b1712);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 28px;
+}
+
+.service-card {
+  background: var(--bg-card);
+  padding: 38px 28px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: all 0.35s ease;
+  border: 1px solid var(--gold-border);
+  border-top: 4px solid var(--gold-bright);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--gold-bright);
+}
+
+.service-card i {
+  font-size: 44px;
+  color: var(--gold-bright);
+  margin-bottom: 18px;
+}
+
+.service-card h4 {
+  font-size: 22px;
+  color: var(--text-white);
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: var(--text-light);
+  font-size: 15px;
+}
+
+/* ===== Packages / Payment ===== */
+.packages {
+  background: var(--bg-dark);
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.package-card {
+  background: var(--bg-card);
+  border-radius: 22px;
+  padding: 38px 28px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s ease;
+  border: 1.5px solid var(--gold-border);
+  box-shadow: var(--shadow);
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--gold-bright);
+}
+
+.package-card.featured {
+  background: linear-gradient(145deg, #2b2316, #19150f);
+  color: white;
+  transform: scale(1.03);
+  border-color: var(--gold-bright);
+}
+
+.package-card.featured:hover {
+  transform: scale(1.03) translateY(-8px);
+}
+
+.package-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--gold-bright), var(--gold-btn));
+  color: #12100d;
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.package-icon {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 20px;
+  background: rgba(214, 182, 110, 0.14);
+  border: 1.5px solid var(--gold-bright);
+  color: var(--gold-bright);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.package-card h3 {
+  font-family: 'Amiri', serif;
+  font-size: 28px;
+  color: var(--gold-bright);
+  margin-bottom: 8px;
+}
+
+.package-card > p {
+  color: var(--text-light);
+}
+
+.package-price {
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--gold-bright);
+  margin: 18px 0;
+}
+
+.package-price small {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+.package-features {
+  list-style: none;
+  text-align: right;
+  margin: 22px 0 28px;
+}
+
+.package-features li {
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(214, 182, 110, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+}
+
+.package-features i {
+  color: var(--success);
+}
+
+/* Payment Section */
+.payment-section {
+  background: var(--bg-card);
+  border: 1.5px solid var(--gold-border-strong);
+  border-radius: 24px;
+  padding: 45px;
+  box-shadow: var(--shadow);
+  display: none;
+}
+
+.payment-section.active {
+  display: block;
+  animation: fadeUp 0.5s ease;
+}
+
+.payment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.payment-form h3 {
+  font-family: 'Amiri', serif;
+  font-size: 28px;
+  color: var(--gold-bright);
+  margin-bottom: 20px;
+}
+
+.payment-methods {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.payment-method {
+  padding: 16px;
+  background: var(--bg-soft);
+  border: 1.5px solid var(--gold-border);
+  border-radius: 14px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+}
+
+.payment-method:hover {
+  border-color: var(--gold-bright);
+}
+
+.payment-method.selected {
+  border-color: var(--gold-bright);
+  background: rgba(214, 182, 110, 0.16);
+  color: var(--gold-bright);
+}
+
+.payment-method i {
+  font-size: 28px;
+  color: var(--gold-bright);
+}
+
+.payment-method span {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.card-inputs {
+  display: grid;
+  gap: 14px;
+}
+
+.card-inputs .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: var(--gold-light);
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 16px;
+  background: var(--bg-soft);
+  border: 1.5px solid var(--gold-border);
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--text-white);
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--gold-bright);
+  box-shadow: 0 0 0 3px rgba(214, 182, 110, 0.18);
+}
+
+.order-summary {
+  background: var(--bg-soft);
+  border: 1px solid var(--gold-border);
+  padding: 28px;
+  border-radius: 18px;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.order-summary h3 {
+  font-family: 'Amiri', serif;
+  font-size: 24px;
+  color: var(--gold-bright);
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1.5px solid var(--gold-border);
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px dashed rgba(214, 182, 110, 0.22);
+  color: var(--text);
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 0;
+  margin-top: 10px;
+  border-top: 2px solid var(--gold-bright);
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--gold-bright);
+}
+
+.secure-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  padding: 14px;
+  border-radius: 12px;
+  margin-top: 20px;
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+.secure-badge i {
+  color: var(--success);
+  font-size: 22px;
+}
+
+/* ===== Testimonials ===== */
+.testimonials {
+  background: var(--bg-main);
+}
+
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+}
+
+.testi-card {
+  background: var(--bg-card);
+  padding: 34px;
+  border-radius: 18px;
+  position: relative;
+  border: 1px solid var(--gold-border);
+  border-right: 4px solid var(--gold-bright);
+  box-shadow: var(--shadow);
+}
+
+.testi-card p {
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: var(--text-light);
+}
+
+.testi-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.testi-author img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold-bright);
+}
+
+.testi-author h5 {
+  color: var(--text-white);
+  font-size: 17px;
+}
+
+.testi-author span {
+  color: var(--gold-bright);
+  font-size: 14px;
+}
+
+.stars {
+  color: var(--gold-bright);
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+/* ===== Luxury Contact & WhatsApp Section ===== */
+.contact {
+  background: radial-gradient(circle at top right, #261e16, #0d0b09 75%);
+  color: white;
+  position: relative;
+  border-top: 2px solid var(--gold-border-strong);
+}
+
+.luxury-contact-layout {
+  display: grid;
+  grid-template-columns: 1.25fr 0.85fr;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.contact-cards-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gold-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1.5px solid var(--gold-border-strong);
+  border-radius: 16px;
+  padding: 22px 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), inset 0 0 22px rgba(214, 182, 110, 0.05);
+  transition: all 0.3s ease;
+}
+
+.gold-box:hover {
+  border-color: var(--gold-bright);
+  box-shadow: 0 14px 36px rgba(214, 182, 110, 0.18);
+  transform: translateY(-2px);
+}
+
+.location-card {
+  text-align: right;
+}
+
+.location-card h4 {
+  color: var(--gold-bright);
+  font-size: 18px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.location-card p {
+  color: #f8f2e7;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.lines-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.line-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 22px 18px;
+}
+
+.line-label {
+  color: #dfd3c0;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.line-number {
+  font-size: 26px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+  direction: ltr;
+}
+
+.line-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.btn-line-wa {
+  background: var(--whatsapp-btn);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-line-wa:hover {
+  background: #1ea350;
+  transform: translateY(-2px);
+}
+
+.btn-line-call {
+  background: linear-gradient(135deg, var(--gold-bright), var(--call-btn));
+  color: #16110c;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-line-call:hover {
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+}
+
+.extra-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.mini-info-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--gold-border);
+  border-radius: 14px;
+  padding: 16px 14px;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.mini-info-box:hover {
+  border-color: var(--gold-bright);
+}
+
+.mini-info-box i {
+  color: var(--gold-bright);
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.mini-info-box h5 {
+  color: var(--gold-light);
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.mini-info-box p,
+.mini-info-box a {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.mini-info-box a:hover {
+  color: var(--gold-bright);
+}
+
+.social-showcase {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1.5px solid var(--gold-border);
+  border-radius: 16px;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.social-handles {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.social-handles span {
+  color: var(--gold-bright);
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.social-handles small {
+  color: #d4c6b2;
+  font-size: 13px;
+  direction: ltr;
+  text-align: right;
+}
+
+.social-icons-row {
+  display: flex;
+  gap: 11px;
+  flex-wrap: wrap;
+}
+
+.social-pill {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(214, 182, 110, 0.14);
+  border: 1px solid var(--gold-border-strong);
+  color: var(--gold-bright);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-pill:hover {
+  background: var(--gold-bright);
+  color: #16110c;
+  transform: translateY(-3px);
+}
+
+/* Booking Form Card */
+.booking-card-panel {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1.5px solid var(--gold-border-strong);
+  border-radius: 18px;
+  padding: 30px 26px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.booking-card-panel h3 {
+  font-family: 'Amiri', serif;
+  font-size: 30px;
+  color: var(--gold-bright);
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.booking-card-panel .form-group label {
+  color: #f3e8d8;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.booking-card-panel .form-group input,
+.booking-card-panel .form-group select,
+.booking-card-panel .form-group textarea {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--gold-border);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 13px 16px;
+  text-align: center;
+}
+
+.booking-card-panel .form-group input::placeholder,
+.booking-card-panel .form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.booking-card-panel .form-group input:focus,
+.booking-card-panel .form-group select:focus,
+.booking-card-panel .form-group textarea:focus {
+  border-color: var(--gold-bright);
+  background: rgba(255, 255, 255, 0.11);
+}
+
+.booking-card-panel .form-group select option {
+  background: #1a140f;
+  color: #ffffff;
+}
+
+.whatsapp-submit-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #25D366, #199c4a);
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35);
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.whatsapp-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+}
+
+/* ===== Map ===== */
+.map-section {
+  padding: 0;
+  background: var(--bg-dark);
+}
+
+.map-wrapper {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  max-width: 1320px;
+  margin: 0 auto;
+  border: 1.5px solid var(--gold-border-strong);
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 410px;
+  border: 0;
+  display: block;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(18, 15, 12, 0.94);
+  backdrop-filter: blur(10px);
+  color: var(--text);
+  padding: 20px 24px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  max-width: 320px;
+  border: 1px solid var(--gold-border);
+  border-right: 4px solid var(--gold-bright);
+}
+
+.map-overlay h4 {
+  color: var(--gold-bright);
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.map-overlay p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--text-light);
+}
+
+.map-overlay a {
+  color: var(--gold-bright);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #080706;
+  color: var(--gold-light);
+  text-align: center;
+  padding: 36px 20px;
+  border-top: 1.5px solid var(--gold-border-strong);
+}
+
+footer p {
+  margin: 6px 0;
+  color: var(--text-light);
+}
+
+footer i {
+  color: var(--gold-bright);
+  margin: 0 5px;
+}
+
+/* ===== Floating Elements ===== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 58px;
+  height: 58px;
+  background: var(--whatsapp);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 29px;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+  z-index: 998;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4); }
+  50% { box-shadow: 0 10px 30px rgba(37, 211, 102, 0.7), 0 0 0 14px rgba(37, 211, 102, 0); }
+}
+
+.back-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--gold-bright), var(--gold-btn));
+  color: #12100d;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 19px;
+  z-index: 998;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(214, 182, 110, 0.35);
+}
+
+.back-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.back-top:hover {
+  transform: translateY(-4px);
+}
+
+/* ===== Toast ===== */
+.toast {
+  position: fixed;
+  top: 95px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-160px);
+  background: var(--bg-card);
+  color: var(--text);
+  padding: 18px 28px;
+  border-radius: 15px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid var(--gold-border);
+  border-right: 5px solid var(--success);
+  transition: transform 0.4s ease;
+  max-width: 90%;
+}
+
+.toast.show {
+  transform: translateX(-50%) translateY(0);
+}
+
+.toast.error {
+  border-right-color: var(--danger);
+}
+
+.toast.error i {
+  color: var(--danger);
+}
+
+.toast i {
+  font-size: 28px;
+  color: var(--success);
+}
+
+.toast h5 {
+  color: var(--gold-bright);
+  margin-bottom: 2px;
+}
+
+.toast p {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+/* ===== Animations ===== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 0.75s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .luxury-contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background: var(--bg-dark);
+    border-left: 1px solid var(--gold-border);
+    width: 80%;
+    height: 100vh;
+    padding: 40px 30px;
+    gap: 24px;
+    transition: right 0.35s ease;
+    overflow-y: auto;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .about-grid,
+  .payment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lines-grid,
+  .extra-contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 70px 20px;
+  }
+
+  .theme-switcher {
+    top: 82px;
+    left: 12px;
+  }
+
+  .theme-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .map-overlay {
+    position: static;
+    max-width: 100%;
+    border-radius: 0;
+    border-right: none;
+    border-top: 3px solid var(--gold-bright);
+  }
+
+  .whatsapp-float {
+    width: 54px;
+    height: 54px;
+    font-size: 26px;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .back-top {
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .lightbox-prev {
+    right: 10px;
+  }
+
+  .lightbox-next {
+    left: 10px;
+  }
+
+  .lightbox-close,
+  .lightbox-zoom,
+  .lightbox-counter {
+    top: -45px;
+  }
+
+  .lightbox-caption {
+    bottom: -45px;
+    font-size: 13px;
+  }
+
+  .package-card.featured {
+    transform: scale(1);
+  }
+
+  .package-card.featured:hover {
+    transform: translateY(-8px);
+  }
+
+  .payment-section {
+    padding: 28px 18px;
+  }
+
+  .card-inputs .row {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-table {
+    font-size: 13px;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: 10px 8px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Theme Switcher -->
+<div class="theme-switcher">
+  <button class="theme-btn theme-gold active" onclick="setTheme('', this)" title="ذهبي ملكي داكن"></button>
+  <button class="theme-btn theme-royal" onclick="setTheme('theme-royal', this)" title="أزرق ليلي ذهبي"></button>
+  <button class="theme-btn theme-sage" onclick="setTheme('theme-sage', this)" title="أخضر زيتي ذهبي"></button>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar" id="mainNav">
+  <div class="nav-container">
+    <div class="logo" onclick="window.location.hash='home'">
+      <i class="fas fa-crown"></i> زفافي
+      <span>حكاية فستان</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">الرئيسية</a></li>
+      <li><a href="#about">من نحن</a></li>
+      <li><a href="#dresses">الفساتين</a></li>
+      <li><a href="#kouch">الكوش</a></li>
+      <li><a href="#services">الخدمات</a></li>
+      <li><a href="#packages">الباقات</a></li>
+      <li><a href="#contact">التواصل والحجز</a></li>
+    </ul>
+    <i class="fas fa-bars menu-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')"></i>
+  </div>
+</nav>
+
+<!-- ========== MAIN SITE ========== -->
+<div id="mainSite">
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-badge"><i class="fas fa-sparkles"></i> زفافي لجميع فساتين الأعراس والمناسبات | zafafi.ye</div>
+    <h1>يومك <span>السعيد</span> يبدأ من هنا</h1>
+    <p>معرض زفافي (حكاية فستان) يقدم لكِ أفخم فساتين الزفاف، أجمل كوش العروسين، وأرقى خدمات تنظيم الأعراس في صنعاء لتجعلي من ليلتك ذكرى ملكية لا تُنسى</p>
+    <a href="#contact" class="btn"><i class="fab fa-whatsapp"></i> احجزي موعدك الآن</a>
+    <a href="#dresses" class="btn btn-outline">اكتشفي المجموعة</a>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2>كل تفاصيل فرحتكِ… <em>في مكان واحد</em></h2>
+      <p>زفافي | حكاية فستان — وجهتكِ الأولى للفخامة والأناقة</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-img fade-in" onclick="openLightbox(0,'dresses')">
+        <img loading="lazy" src="assets/images/bridal-03.jpg" alt="معرض زفافي">
+      </div>
+      <div class="about-text fade-in">
+        <h3>نصنع لحظاتك السعيدة بإتقان</h3>
+        <p>في <strong>معرض زفافي</strong>، نؤمن بأن كل عروس تستحق يومًا استثنائيًا يعكس شخصيتها وأحلامها. لذلك نحرص على توفير تشكيلة حصرية من أرقى فساتين الأعراس والمناسبات، وتصميم أفخم الكوش، وتقديم خدمات متكاملة تفوق التوقعات.</p>
+        <p>فريقنا المتخصص في خدمتكم يوميًا من الساعة <strong>٨ صباحاً إلى ١٠ مساءً</strong> في فرعنا الكائن بصنعاء - شارع كلية الشرطة - أمام النادي الترفيهي الرياضي.</p>
+        <div class="stats">
+          <div class="stat"><h4>+2500</h4><p>عروس سعيدة</p></div>
+          <div class="stat"><h4>+15</h4><p>سنة خبرة</p></div>
+          <div class="stat"><h4>+500</h4><p>حفل ناجح</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dresses -->
+<section id="dresses" style="background: var(--bg-main)">
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2>فساتين الزفاف</h2>
+      <p>إطلالتك من عالم صُمم ليليق بكِ — اختاري التصنيف لتصفية الفساتين</p>
+      <p class="catalog-disclaimer">الصور المعروضة توضيحية؛ تواصلي معنا للتأكد من توفر الموديل.</p>
+    </div>
+
+    <div class="filter-buttons fade-in" id="dressFilterButtons">
+      <button type="button" class="filter-btn active" data-filter="all" onclick="filterDresses('all', this)">الكل</button>
+      <button type="button" class="filter-btn" data-filter="white" onclick="filterDresses('white', this)">أبيض ملكي</button>
+      <button type="button" class="filter-btn" data-filter="off-white" onclick="filterDresses('off-white', this)">أوف وايت</button>
+      <button type="button" class="filter-btn" data-filter="creamy" onclick="filterDresses('creamy', this)">كريمي</button>
+      <button type="button" class="filter-btn" data-filter="colored" onclick="filterDresses('colored', this)">فساتين ملونة</button>
+      <button type="button" class="filter-btn" data-filter="traditional" onclick="filterDresses('traditional', this)">تراثي</button>
+    </div>
+
+    <div class="dress-cards-grid" id="dresses-grid">
+      <div class="dress-card fade-in" data-category="white">
+        <div class="dress-card-media">
+          <img src="assets/images/dresses/white/dress1.jpg" alt="فستان زفاف أبيض ملكي" loading="lazy">
+          <span class="dress-badge">أبيض ملكي</span>
+        </div>
+        <div class="dress-card-body">
+          <h3>فستان زفاف أبيض ملكي</h3>
+          <p>إشراقة نقية بتفاصيل كريستالية دقيقة وطرحة فاخرة تليق بليلة العمر.</p>
+          <div class="dress-card-actions">
+            <button type="button" class="btn-card-view" onclick="openMediaLightbox('assets/images/dresses/white/dress1.jpg', 'فستان زفاف أبيض ملكي')">
+              <i class="fas fa-search-plus"></i> معاينة الصورة
+            </button>
+            <a href="https://wa.me/967730022910?text=مرحباً%20زفافي،%20أرغب%20بالاستفسار%20عن%20فستان%20الزفاف%20الأبيض%20الملكي" target="_blank" class="btn-card-book">
+              <i class="fab fa-whatsapp"></i> استفسار
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dress-card fade-in" data-category="white">
+        <div class="dress-card-media">
+         <img src="assets/images/dresses/white/dress2.jpg" alt="فستان أبيض بتفاصيل ناعمة" loading="lazy">
+          <span class="dress-badge">أبيض ملكي</span>
+          <span class="dress-video-tag"><i class="fas fa-sparkles"></i> تصميم مميز</span>
+        </div>
+        <div class="dress-card-body">
+          <h3>فستان أبيض بتفاصيل ناعمة</h3>
+          <p>قصة أنيقة بتفاصيل ناعمة ولمسات لامعة تليق بليلة العمر.</p>
+          <div class="dress-card-actions">
+            <button type="button" class="btn-card-view" onclick="openMediaLightbox('assets/images/dresses/white/dress2.jpg', 'فستان أبيض بتفاصيل ناعمة')">
+              <i class="fas fa-search-plus"></i> معاينة الصورة
+            </button>
+            <a href="https://wa.me/967730022910?text=مرحباً%20زفافي،%20أرغب%20بحجز%20موعد%20لقياس%20الفستان%20الأبيض" target="_blank" class="btn-card-book">
+              <i class="fab fa-whatsapp"></i> حجز موعد
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dress-card fade-in" data-category="off-white">
+        <div class="dress-card-media">
+          <img src="assets/images/dresses/off-white/off-01.jpg" alt="فستان أوف وايت راقٍ" loading="lazy">
+           <img src="assets/images/dresses/off-white/off-02.jpg" alt="فستان أوف وايت راقٍ" loading="lazy">
+          <span class="dress-badge">أوف وايت</span>
+        </div>
+        <div class="dress-card-body">
+          <h3>فستان أوف وايت راقٍ</h3>
+          <p>درجة أوف وايت دافئة بتصميم كلاسيكي أنيق وقصة انسيابية ناعمة.</p>
+          <div class="dress-card-actions">
+            <button type="button" class="btn-card-view" onclick="openMediaLightbox('assets/images/dresses/off-white/off-01.jpg', 'فستان أوف وايت راقٍ')">
+              <i class="fas fa-search-plus"></i> معاينة الصورة
+            </button>
+            <a href="https://wa.me/967730022910?text=مرحباً%20زفافي،%20أرغب%20بالاستفسار%20عن%20فستان%20أوف%20وايت" target="_blank" class="btn-card-book">
+              <i class="fab fa-whatsapp"></i> استفسار
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dress-card fade-in" data-category="creamy">
+        <div class="dress-card-media">
+          <img src="assets/images/dresses/creamy/bridal-01.jpg" alt="فستان كريمي فاخر" loading="lazy">
+          <img src="assets/images/dresses/creamy/bridal-02.jpg" alt="فستان كريمي فاخر" loading="lazy">
+          <span class="dress-badge">كريمي</span>
+        </div>
+        <div class="dress-card-body">
+          <h3>فستان كريمي فاخر</h3>
+          <p>لمسة كريمية مخملية مع تطريز متقن يمنحك حضوراً هادئاً وفخماً.</p>
+          <div class="dress-card-actions">
+            <button type="button" class="btn-card-view" onclick="openMediaLightbox('assets/images/dresses/creamy/bridal-01.jpg', 'فستان كريمي فاخر')">
+              <i class="fas fa-search-plus"></i> معاينة الصورة
+            </button>
+            <a href="https://wa.me/967730022910?text=مرحباً%20زفافي،%20أرغب%20بالاستفسار%20عن%20فستان%20كريمي" target="_blank" class="btn-card-book">
+              <i class="fab fa-whatsapp"></i> استفسار
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dress-card fade-in" data-category="colored">
+        <div class="dress-card-media">
+          <img decoding="async" loading="lazy" src="assets/images/dresses/colored/evening-1.jpg" alt="فستان  ملون فاخر" loading="lazy">
+          <img decoding="async" loading="lazy" src="assets/images/dresses/colored/evening-2.jpg" alt="فستان  ملون فاخر" loading="lazy">
+          <img decoding="async" loading="lazy" src="assets/images/dresses/colored/evening-3.jpg" alt="فستان  ملون فاخر" loading="lazy">
+          <img decoding="async" loading="lazy" src="assets/images/dresses/colored/evening-4.jpg" alt="فستان  ملون فاخر" loading="lazy">
+          <img decoding="async" loading="lazy" src="assets/images/dresses/colored/evening-5.jpg" alt="فستان  ملون فاخر" loading="lazy">
+          <span class="dress-badge">ملون</span>
+        </div>
+        <div class="dress-card-body">
+          <h3>فساتين سهرة, ملونة</h3>
+          <p>تصميم انسيابي بتفاصيل راقية وتطريز يدوي متقن للسهرات والمناسبات.</p>
+          <div class="dress-card-actions">
+            <button type="button" class="btn-card-view" onclick="openMediaLightbox('assets/images/dresses/colored/evening-1.jpg', 'فساتين سهرة ملونة')">
+              <i class="fas fa-search-plus"></i> معاينة الصورة
+            </button>
+            <a href="https://wa.me/967730022910?text=مرحباً%20زفافي،%20أرغب%20بالاستفسار%20عن%20الفساتين%20الملونة" target="_blank" class="btn-card-book">
+              <i class="fab fa-whatsapp"></i> استفسار
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dress-card fade-in" data-category="traditional">
+        <div class="dress-card-media">
+          <img src="assets/images/dresses/traditional/yemen1.jpg" alt="إطلالة تراثية أصيلة" loading="lazy">
+          <img src="assets/images/dresses/traditional/yemen2.jpg" alt="إطلالة تراثية أصيلة" loading="lazy">
+          <span class="dress-badge">تراثي</span>
+        </div>
+        <div class="dress-card-body">
+          <h3>تصاميم تراثية فاخرة</h3>
+          <p>مزيج أصيل من التراث العريق واللمسات العصرية الفاخرة للمناسبات الخاصة.</p>
+          <div class="dress-card-actions">
+            <button type="button" class="btn-card-view" onclick="openMediaLightbox('assets/images/dresses/traditional/yemen1', 'تصاميم تراثية فاخرة')">
+              <i class="fas fa-search-plus"></i> معاينة الصورة
+            </button>
+            <a href="https://wa.me/967730022910?text=مرحباً%20زفافي،%20أرغب%20بالاستفسار%20عن%20الفساتين%20التراثية" target="_blank" class="btn-card-book">
+              <i class="fab fa-whatsapp"></i> استفسار
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Kouch -->
+<section id="kouch" style="background: var(--bg-dark)">
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2>كوش العروسين</h2>
+      <p>تصاميم ملكية تليق بجلوسكما في أجمل ليلة</p>
+    </div>
+    <div class="gallery" id="galleryKouch">
+      <div class="gallery-item fade-in" onclick="openLightbox(0,'kouch')">
+        <img loading="lazy" src="assets/images/kouch/stage-01.jpg" alt="كوش كلاسيكي">
+        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+        <div class="gallery-overlay"><h4>كوش كلاسيكي</h4><p>أناقة ذهبية</p></div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox(1,'kouch')">
+        <img loading="lazy" src="assets/images/kouch/stage-02.jpg" alt="كوش ملكي">
+        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+        <div class="gallery-overlay"><h4>كوش ملكي</h4><p>تصميم فخم</p></div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox(2,'kouch')">
+        <img loading="lazy" src="assets/images/kouch/stage-03.jpg" alt="كوش عصري">
+        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+        <div class="gallery-overlay"><h4>كوش عصري</h4><p>ألوان هادئة</p></div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox(3,'kouch')">
+        <img loading="lazy" src="assets/images/kouch/stage-04.jpg" alt="كوش رومانسي">
+        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+        <div class="gallery-overlay"><h4>كوش رومانسي</h4><p>زهور طبيعية</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2>خدماتنا المتكاملة</h2>
+      <p>نقدم لكِ باقة شاملة من الخدمات لتجعلي حفلك مثاليًا</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <i class="fas fa-calendar-check"></i>
+        <h4>تنظيم الحفلات</h4>
+        <p>تخطيط وتنظيم كامل للحفل من الألف إلى الياء</p>
+      </div>
+      <div class="service-card fade-in">
+        <i class="fas fa-camera"></i>
+        <h4>التصوير والفيديو</h4>
+        <p>فريق تصوير محترف بجودة سينمائية</p>
+      </div>
+      <div class="service-card fade-in">
+        <i class="fas fa-music"></i>
+        <h4>الصوتيات والإضاءة</h4>
+        <p>أحدث أنظمة الصوت والإضاءة</p>
+      </div>
+      <div class="service-card fade-in">
+        <i class="fas fa-spa"></i>
+        <h4>الاكسسوارات والورود</h4>
+        <p>خبراء >الاكسسوارات والورود لإبراز جمالك</p>
+      </div>
+      <div class="service-card fade-in">
+        <i class="fas fa-car"></i>
+        <h4>سيارة العروسين</h4>
+        <p>أفخم السيارات المجهزة</p>
+      </div>
+      <div class="service-card fade-in">
+        <i class="fas fa-utensils"></i>
+        <h4>خدمات الضيافةووجبات الاعراس والحلو </h4>
+        <p>قوائم طعام متنوعة ومحترفة</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Packages & Payment -->
+<section class="packages" id="packages">
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2>باقاتنا المميزة</h2>
+      <p>اختاري الباقة المناسبة ليومك المميز</p>
+    </div>
+    <div class="packages-grid">
+      <div class="package-card fade-in">
+        <div class="package-icon"><i class="fas fa-star"></i></div>
+        <h3>الباقة الأساسية</h3>
+        <p>مثالية للحفلات الصغيرة</p>
+        <div class="package-price">150000 <small>ريال يمني </small></div>
+        <ul class="package-features">
+          <li><i class="fas fa-check-circle"></i> فستان عروس واحد</li>
+          <li><i class="fas fa-check-circle"></i> كوش كلاسيكي</li>
+          <li><i class="fas fa-check-circle"></i>  وجبات اعراس لـ 50 ضيف</li>
+          <li><i class="fas fa-check-circle"></i> تصوير أساسي</li>
+          <li><i class="fas fa-times-circle" style="color:#666"></i> <span style="opacity:0.55"> وتاج وتوابع الفستان كاملااكسسوارات والورو</span></li>
+        </ul>
+        <button class="btn" onclick="selectPackage('basic')">احجزي الآن</button>
+      </div>
+      <div class="package-card featured fade-in">
+        <div class="package-badge">⭐ الأكثر طلبًا</div>
+        <div class="package-icon"><i class="fas fa-crown"></i></div>
+        <h3>الباقة المميزة</h3>
+        <p>الخيار الأمثل لمعظم الأعراس</p>
+        <div class="package-price">200000 <small>ريال يمني</small></div>
+        <ul class="package-features">
+          <li><i class="fas fa-check-circle"></i> فستانان (أبيض + ملون)</li>
+          <li><i class="fas fa-check-circle"></i> كوش ملكي فاخر</li>
+          <li><i class="fas fa-check-circle"></i> حلويات لـ 150 ضيف</li>
+          <li><i class="fas fa-check-circle"></i> تصوير + فيديو سينمائي</li>
+          <li><i class="fas fa-check-circle"></i> توابع الفستان كاملاالاكسسوارات والورود</li>
+        </ul>
+        <button class="btn" onclick="selectPackage('featured')">احجزي الآن</button>
+      </div>
+      <div class="package-card fade-in">
+        <div class="package-icon"><i class="fas fa-gem"></i></div>
+        <h3>الباقة الملكية</h3>
+        <p>تجربة فاخرة بلا حدود</p>
+        <div class="package-price">250,000 <small>ريال يمني</small></div>
+        <ul class="package-features">
+          <li><i class="fas fa-check-circle"></i> 3 فساتين حصرية</li>
+          <li><i class="fas fa-check-circle"></i> كوش ملكي مخصص</li>
+          <li><i class="fas fa-check-circle"></i> حلويات لـ 300 ضيف</li>
+          <li><i class="fas fa-check-circle"></i> تغطية كاملة + درون</li>
+          <li><i class="fas fa-check-circle"></i>  فاخرة + توابع الفستان كاملاالاكسسوارات والورود</li>
+        </ul>
+        <button class="btn" onclick="selectPackage('royal')">احجزي الآن</button>
+      </div>
+    </div>
+
+    <div class="payment-section" id="paymentSection" aria-live="polite">
+      <h2 style="font-family:'Amiri',serif;text-align:center;color:var(--gold-bright);margin-bottom:18px">
+        <i class="fas fa-calendar-check"></i> طلب حجز الباقة
+      </h2>
+      <p style="text-align:center;color:var(--text-light);margin-bottom:26px">أرسلي طلبك إلى فريق زفافي، وسنؤكد معكِ تفاصيل الموعد والتوفر مباشرة.</p>
+      <div class="order-summary package-summary">
+        <h3><i class="fas fa-receipt"></i> ملخص اختيارك</h3>
+        <div class="order-item"><span id="summaryPackage">الباقة المميزة</span><strong><span id="summaryPrice">200,000</span> ريال يمني</strong></div>
+        <div class="order-total"><span>الإجمالي التقديري</span><span><span id="summaryTotal">200,000</span> ريال يمني</span></div>
+        <div class="secure-badge">
+          <i class="fas fa-shield-alt"></i>
+          <div><strong>تأكيد الحجز مباشرة مع المعرض</strong><br><small>لا تُجمع بيانات بطاقة أو تُنفذ دفعة على هذا الموقع.</small></div>
+        </div>
+        <a class="btn package-whatsapp" id="packageWhatsapp" href="#contact" onclick="continuePackageBooking(event)">
+          <i class="fab fa-whatsapp"></i> أكملي بياناتك لإرسال طلب الحجز
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sweets -->
+<section id="sweets" style="background: var(--bg-main)">
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2>قسم الحلويات وتجهيزات الأعراس</h2>
+      <p>نكهات فاخرة وتصاميم فنية تأسر الحضور</p>
+    </div>
+    <div class="gallery" id="gallerySweets">
+      <div class="gallery-item fade-in" onclick="openLightbox(0,'sweets')">
+        <img loading="lazy" src="assets/images/sweets/sweets1.jpg" alt="كيك العروس">
+        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+        <div class="gallery-overlay"><h4>كيك العروس</h4><p>تصاميم مخصصة</p></div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox(1,'sweets')">
+        <img loading="lazy" src="assets/images/sweets/sweets2.jpg" alt="حلويات شرقية">
+        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+        <div class="gallery-overlay"><h4>حلويات شرقية</h4><p>بأجود المكونات</p></div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox(2,'sweets')">
+        <img loading="lazy" src="assets/images/sweets/sweets3.JPG" alt="كب كيك فاخر">
+        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+        <div class="gallery-overlay"><h4>كب كيك فاخر</h4><p>نكهات متنوعة</p></div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox(3,'sweets')">
+        <img loading="lazy" src="assets/images/sweets/sweets4.jpg" alt="وجبات اعراس فاخرة">
+        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+        <div class="gallery-overlay"><h4>وجبات اعراس فاخرة</h4><p>هدايا للضيوف وعروضات وخصومات</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials" style="background: var(--bg-dark)">
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2>آراء عملائنا</h2>
+      <p>ما يقوله من جربوا خدمات معرض زفافي</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card fade-in">
+        <div class="stars">★★★★★</div>
+        <p>تجربة لا تُنسى في معرض زفافي! الفستان كان أجمل مما تخيلت، والفريق كان متعاونًا جدًا في كل التفاصيل.</p>
+        <div class="testi-author">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" alt="سارة">
+          <div><h5>سارة أحمد</h5><span>عروس زفافي</span></div>
+        </div>
+      </div>
+      <div class="testi-card fade-in">
+        <div class="stars">★★★★★</div>
+        <p>الكوش كان تحفة فنية، والضيافة راقية جدًا. كل ضيوفنا أعجبوا بالتنظيم والفخامة.</p>
+        <div class="testi-author">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100" alt="نور">
+          <div><h5>نور محمود</h5><span>عروس زفافي</span></div>
+        </div>
+      </div>
+      <div class="testi-card fade-in">
+        <div class="stars">★★★★★</div>
+        <p>خدمة احترافية من البداية للنهاية. الفريق استمع لرغباتي ونفذها بإتقان يفوق الوصف.</p>
+        <div class="testi-author">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100" alt="ليلى">
+          <div><h5>ليلى خالد</h5><span>عروس زفافي</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== LUXURY CONTACT & WHATSAPP SECTION ========== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2>قسم التواصل والواتساب</h2>
+      <p>زفافي لجميع فساتين وخدمات الأعراس والمناسبات — يسعدنا تواصلكم وحجز مواعيدكم</p>
+    </div>
+
+    <div class="luxury-contact-layout">
+
+      <!-- Right Column: Address, 4 Lines Grid, Hours/Email/Web & Socials -->
+      <div class="contact-cards-panel fade-in">
+
+        <!-- Showroom Location Box -->
+        <div class="gold-box location-card">
+          <h4><i class="fas fa-map-marker-alt"></i> موقع المعرض:</h4>
+          <p>صنعاء - شارع كلية الشرطة - أمام النادي الترفيهي الرياضي</p>
+        </div>
+
+        <!-- 4 Phone Lines Grid -->
+        <div class="lines-grid">
+          <div class="gold-box line-card">
+            <div class="line-label">الخط الأول (الحجوزات)</div>
+            <div class="line-number">730022910</div>
+            <div class="line-actions">
+              <a href="https://wa.me/967730022910?text=مرحباً%20معرض%20زفافي،%20أرغب%20في%20الحجز" target="_blank" class="btn-line-wa">
+                <i class="fab fa-whatsapp"></i> واتساب
+              </a>
+              <a href="tel:+967730022910" class="btn-line-call">
+                <i class="fas fa-phone-alt"></i> اتصال
+              </a>
+            </div>
+          </div>
+
+          <div class="gold-box line-card">
+            <div class="line-label">الخط الثاني (الاستفسارات)</div>
+            <div class="line-number">770022910</div>
+            <div class="line-actions">
+              <a href="https://wa.me/967770022910?text=مرحباً%20معرض%20زفافي،%20لدي%20استفسار" target="_blank" class="btn-line-wa">
+                <i class="fab fa-whatsapp"></i> واتساب
+              </a>
+              <a href="tel:+967770022910" class="btn-line-call">
+                <i class="fas fa-phone-alt"></i> اتصال
+              </a>
+            </div>
+          </div>
+
+          <div class="gold-box line-card">
+            <div class="line-label">الخط الثالث (خدمة العرائس)</div>
+            <div class="line-number">783441001</div>
+            <div class="line-actions">
+              <a href="https://wa.me/967783441001?text=مرحباً%20معرض%20زفافي،%20أرغب%20في%20التواصل%20مع%20خدمة%20العرائس" target="_blank" class="btn-line-wa">
+                <i class="fab fa-whatsapp"></i> واتساب
+              </a>
+              <a href="tel:+967783441001" class="btn-line-call">
+                <i class="fas fa-phone-alt"></i> اتصال
+              </a>
+            </div>
+          </div>
+
+          <div class="gold-box line-card">
+            <div class="line-label">الخط الرابع (الإدارة والتنسيق)</div>
+            <div class="line-number">778817206</div>
+            <div class="line-actions">
+              <a href="https://wa.me/967778817206?text=مرحباً%20إدارة%20معرض%20زفافي" target="_blank" class="btn-line-wa">
+                <i class="fab fa-whatsapp"></i> واتساب
+              </a>
+              <a href="tel:+967778817206" class="btn-line-call">
+                <i class="fas fa-phone-alt"></i> اتصال
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Working Hours, Website & Email -->
+        <div class="extra-contact-grid">
+          <div class="mini-info-box">
+            <i class="fas fa-clock"></i>
+            <h5>ساعات العمل</h5>
+            <p>من ٨ صباحاً إلى ١٠ مساءً</p>
+          </div>
+          <div class="mini-info-box">
+            <i class="fas fa-globe"></i>
+            <h5>الموقع الإلكتروني</h5>
+            <a href="https://www.zf.ye" target="_blank" dir="ltr">www.zf.ye</a>
+          </div>
+          <div class="mini-info-box">
+            <i class="fas fa-envelope"></i>
+            <h5>البريد الإلكتروني</h5>
+            <a href="mailto:zafafi.ye@gmail.com" dir="ltr">zafafi.ye@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-showcase">
+          <div class="social-handles">
+            <span>زفافي | حكاية فستان    ✨🤍   </span>
+            <small>@zafafi.ye &nbsp;|&nbsp; tiktok.com/@zf_afy</small>
+          </div>
+          <div class="social-icons-row">
+            <a href="https://www.instagram.com/zafafi.ye" target="_blank" class="social-pill" title="إنستغرام @zafafi.ye">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.threads.net/@zafafi.ye" target="_blank" class="social-pill" title="ثريدز @zafafi.ye">
+              <i class="fas fa-at"></i>
+            </a>
+            <a href="https://www.tiktok.com/@zf_afy" target="_blank" class="social-pill" title="تيك توك @zf_afy">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61596521586631" target="_blank" class="social-pill" title="فيسبوك زفافي">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://wa.me/967730022910" target="_blank" class="social-pill" title="واتساب مباشر">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Left Column: Direct Appointment Booking Form -->
+      <form class="booking-card-panel fade-in" onsubmit="handleContact(event)">
+        <div>
+          <h3>احجزي موعدك عبر الواتساب</h3>
+
+          <div class="form-group">
+            <label>الاسم الكامل *</label>
+            <input type="text" id="cName" name="name" placeholder="أدخلي اسمك الكريم" maxlength="120" autocomplete="name" required>
+          </div>
+
+          <div class="form-group">
+            <label>رقم هاتفك للتواصل *</label>
+            <input type="tel" id="cPhone" name="phone" placeholder="7xxxxxxxx" maxlength="32" autocomplete="tel" required>
+          </div>
+
+          <div class="form-group">
+            <label>نوع الخدمة *</label>
+            <select id="cService" required>
+              <option value="فستان زفاف أبيض">فستان زفاف أبيض</option>
+              <option value="فستان سهرة / مناسبات">فستان سهرة / مناسبات</option>
+              <option value="كوش عروسين">كوش عروسين</option>
+              <option value="باقة عروس متكاملة">باقة عروس متكاملة</option>
+              <option value="استفسار عام">استفسار عام</option>
+              <optgroup label="باقات زفافي">
+                <option value="package:basic">الباقة الأساسية</option>
+                <option value="package:featured">الباقة المميزة</option>
+                <option value="package:royal">الباقة الملكية</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>اختاري رقم واتساب المعرض للإرسال إليه *</label>
+            <select id="cTargetWa" required>
+              <option value="967730022910">واتساب 1 : 730022910 (الحجوزات)</option>
+              <option value="967770022910">واتساب 2 : 770022910 (الاستفسارات)</option>
+              <option value="967783441001">واتساب 3 : 783441001 (خدمة العرائس)</option>
+              <option value="967778817206">واتساب 4 : 778817206 (الإدارة والتنسيق)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>ملاحظات إضافية أو موعد الزيارة المقترح</label>
+            <textarea id="cMsg" name="notes" rows="3" maxlength="1000" placeholder="اكتبي تفاصيل طلبك أو اليوم المناسب لزيارتنا..."></textarea>
+          </div>
+          <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">
+            <label for="bookingWebsite">اتركي هذا الحقل فارغاً</label>
+            <input type="text" id="bookingWebsite" name="website" tabindex="-1" autocomplete="off">
+          </div>
+          <p style="color:var(--text-light);font-size:.8rem;line-height:1.6;margin:12px 0">سنستخدم بياناتك لمتابعة طلب الحجز، مع حد مؤقت للإرسال لأغراض الحماية؛ لا تُحفظ عناوين الاتصال في قاعدة بيانات الحجوزات. لا تضعي بيانات بطاقة الدفع في الملاحظات.</p>
+        </div>
+
+        <button type="submit" id="bookingSubmitButton" class="whatsapp-submit-btn">
+          <i class="fab fa-whatsapp" style="font-size:20px"></i> إرسال الحجز عبر واتساب
+        </button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- Map -->
+
+<section class="map-section">
+  <div style="padding:70px 20px;background:var(--bg-dark)">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2>موقعنا على الخريطة</h2>
+        <p>يسعدنا استقبالكِ في معرض زفافي بصنعاء</p>
+      </div>
+      <div class="map-wrapper fade-in">
+        <iframe src="https://www.google.com/maps/place/%D9%85%D8%AD%D9%84+%D8%B2%D9%81%D8%A7%D9%81%D9%8A+%D9%84%D9%81%D8%B3%D8%A7%D8%AA%D9%8A%D9%86+%D8%A7%D9%84%D8%B2%D9%81%D8%A7%D9%81%E2%80%AD/@15.3446684,44.2183949,15z/data=!4m10!1m2!2m1!1z2YXYrdmEINiy2YHYp9mB2Yog2YTZgdiz2KfYqtmK2YYg2KfZhNiy2YHYp9mB!3m6!1s0x1603dbfbc09742ab:0x67208b0072ade09d!8m2!3d15.3446684!4d44.2060168!15sCi3Zhdit2YQg2LLZgdin2YHZiiDZhNmB2LPYp9iq2YrZhiDYp9mE2LLZgdin2YGSARx3ZWRkaW5nX2RyZXNzX3JlbnRhbF9zZXJ2aWNl4AEA!16s%2Fg%2F11zdzbr6y2!10m2!1e1!2e1?entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D" allowfullscreen loading="lazy"></iframe>
+        <div class="map-overlay">
+          <h4><i class="fas fa-map-marker-alt"></i> معرض زفافي | حكاية فستان</h4>
+          <p>صنعاء - شارع كلية الشرطة - أمام النادي الترفيهي الرياضي</p>
+          <p style="font-size:13px;color:var(--text-light)"><i class="fas fa-clock" style="color:var(--gold-bright)"></i> ساعات العمل: من ٨ صباحاً إلى ١٠ مساءً</p>
+          <a href="https://maps.app.goo.gl/HsgkzB56U2TuafE79?g_st=aw" target="_blank" rel="noopener noreferrer">فتح في خرائط جوجل <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- بطاقة واتساب وزفافي التجارية ورمز QR -->
+<div class="gold-box" style="text-align:center;">
+  <p style="color:var(--text-light);font-size:14px;margin-bottom:14px;">رمز QR حساب Zafafi</p>
+  <p style="color:var(--text-light);font-size:14px;margin-bottom:14px;">رمز QR الموقع الالكتروني Zafafi</p>
+  <!-- التعديل هنا: وضع الصور داخل حاوية flex لتصبح بجوار بعضها -->
+  <div style="display: flex; justify-content: center; gap: 200px; flex-wrap: wrap; margin-bottom: 15px;">
+    <img src="assets/whatsapp-qr-card.jpg" alt="رمز QR الموقع الالكتروني Zafafi" style="max-width: 150px; height: auto;">
+    <img src="assets/zafafi-qr.png" alt="رمز QR حساب Zafafi" style="max-width: 150px; height: auto;">
+  </div>
+
+</div>
+
+<!-- ========== END MAIN SITE ========== -->
+
+<!-- لا تتضمن النسخة الثابتة لوحة إدارة أو تسجيل دخول تجريبياً. -->
+
+<!-- Footer -->
+<footer id="mainFooter">
+  <p><i class="fas fa-crown"></i> <strong>زفافي | حكاية فستان</strong> (zafafi.ye) <i class="fas fa-crown"></i></p><div>
+  <p>صنعاء - شارع كلية الشرطة - أمام النادي الترفيهي الرياضي | ساعات العمل: من ٨ صباحاً إلى ١٠ مساءً</p>
+  <p style="font-size:14px">
+    <a href="https://www.zf.ye" target="_blank" style="color:var(--gold-bright);text-decoration:none">www.zf.ye</a> &nbsp;|&nbsp;
+    <a href="mailto:zafafi.ye@gmail.com" style="color:var(--gold-bright);text-decoration:none">zafafi.ye@gmail.com</a>
+  </p>
+  <p style="font-size:13px;margin-top:8px;opacity:0.75">جميع الحقوق محفوظة © 2026 معرض زفافي</p>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+    <div class="lightbox-counter" id="lightboxCounter">1 / 4</div>
+    <button class="lightbox-zoom" onclick="toggleZoom()"><i class="fas fa-search-plus"></i></button>
+    <button class="lightbox-nav lightbox-prev" onclick="navLightbox(-1)"><i class="fas fa-chevron-right"></i></button>
+    <img id="lightboxImg" src="" alt="">
+    <button class="lightbox-nav lightbox-next" onclick="navLightbox(1)"><i class="fas fa-chevron-left"></i></button>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+</div>
+
+<!-- Floating Elements -->
+<a href="https://wa.me/967730022910?text=مرحباً%20معرض%20زفافي،%20أرغب%20في%20الاستفسار%20عن%20خدماتكم" class="whatsapp-float" target="_blank" title="تواصلي معنا عبر واتساب زفافي">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Toast -->
+<div class="toast" id="toast">
+  <i class="fas fa-check-circle"></i>
+  <div>
+    <h5 id="toastTitle">تم بنجاح</h5>
+    <p id="toastMsg">تمت العملية بنجاح</p>
+  </div>
+</div>
+
+<script>
+const galleries = {
+  dresses: [
+    {src:'assets/images/dresses/white/bridal-01.jpg',title:'فستان الأميرة',desc:'تصميم كلاسيكي فاخر'},
+    {src:'assets/images/dresses/white/bridal-03.jpg',title:'فستان الملكة',desc:'دانتيل فرنسي راقي'},
+    {src:'assets/images/dresses/white/bridal-04.jpg',title:'فستان العروس',desc:'بساطة وأناقة ملكية'},
+    {src:'assets/images/dresses/off-white/off-01.jpg',title:'فستان العروس',desc:'بساطة وأناقة ملكية'},
+    {src:'assets/images/dresses/creamy/bridal-01.jpg',title:'فستان العروس',desc:'بساطة وأناقة ملكية'},
+    {src:'assets/images/dresses/colored/evening-1.jpg',title:'فستان الملون الانيق والمغربي الاصيل',desc:'بساطة وأناقة ملكية'},
+    {src:'assets/images/dresses/traditional/yemen1.jpg',title:'فستان التراث الاصيل ',desc:'تطريز يدوي فاخر'}
+  ],
+  kouch: [
+    {src:'assets/images/kouch/stage-02.jpg',title:'كوش ملكي',desc:'تصميم فخم'},
+    {src:'assets/images/kouch/stage-03.jpg',title:'كوش عصري',desc:'ألوان هادئة'},
+    {src:'assets/images/kouch/stage-01.jpg',title:'كوش رومانسي',desc:'زهور طبيعية'}
+  ],
+  sweets: [
+    {src:'assets/images/sweets/sweets-01.jpg',title:'كيك العروس',desc:'تصاميم مخصصة'},
+    {src:'assets/images/sweets/sweets-02.jpg',title:'حلويات شرقية',desc:'بأجود المكونات'},
+    {src:'assets/images/sweets/sweets-03.jpg',title:'كب كيك فاخر',desc:'نكهات متنوعة'},
+    {src:'assets/images/sweets/sweets-04.jpg',title:'شوكولاتة فاخرة',desc:'هدايا للضيوف'}
+  ]
+};
+
+let currentGallery = 'dresses';
+let currentIndex = 0;
+const packageCatalog = {
+  basic: {name:'الأساسية',price:150000},
+  featured: {name:'المميزة',price:200000},
+  royal: {name:'الملكية',price:250000}
+};
+let selectedPackage = {key:'featured',...packageCatalog.featured};
+
+function setTheme(theme, btnEl){
+  document.body.className = theme;
+  document.querySelectorAll('.theme-btn').forEach(b=>b.classList.remove('active'));
+  if(btnEl) btnEl.classList.add('active');
+  localStorage.setItem('theme',theme);
+}
+const savedTheme = localStorage.getItem('theme');
+if(savedTheme){
+  document.body.className = savedTheme;
+  const btns = document.querySelectorAll('.theme-btn');
+  btns.forEach(b=>b.classList.remove('active'));
+  if(savedTheme==='theme-royal') btns[1].classList.add('active');
+  else if(savedTheme==='theme-sage') btns[2].classList.add('active');
+  else btns[0].classList.add('active');
+}
+
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting) e.target.classList.add('visible')});
+},{threshold:0.12});
+document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+
+const backTop = document.getElementById('backTop');
+window.addEventListener('scroll',()=>{
+  const nav=document.querySelector('.navbar');
+  nav.style.boxShadow = window.scrollY>50 ? '0 6px 32px rgba(0,0,0,0.75)' : '0 4px 28px rgba(0,0,0,0.55)';
+  backTop.classList.toggle('visible', window.scrollY>500);
+});
+document.querySelectorAll('.nav-links a').forEach(a=>{
+  a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('active'));
+});
+
+function filterDresses(category, btnEl){
+  document.querySelectorAll('#dressFilterButtons .filter-btn').forEach(b=>b.classList.remove('active'));
+  if(btnEl) btnEl.classList.add('active');
+  document.querySelectorAll('#dresses-grid .dress-card').forEach(card=>{
+    const match = category === 'all' || card.dataset.category === category;
+    card.classList.toggle('hidden', !match);
+  });
+}
+
+function openMediaLightbox(src, title){
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightboxCaption').textContent = title;
+  document.getElementById('lightboxCounter').textContent = 'معاينة';
+  document.getElementById('lightboxImg').classList.remove('zoomed');
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function openLightbox(index, gallery){
+  currentGallery = gallery;
+  currentIndex = index;
+  updateLightbox();
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('active');
+  document.getElementById('lightboxImg').classList.remove('zoomed');
+  document.body.style.overflow = '';
+}
+function updateLightbox(){
+  const item = galleries[currentGallery][currentIndex];
+  document.getElementById('lightboxImg').src = item.src;
+  document.getElementById('lightboxCaption').textContent = `${item.title} - ${item.desc}`;
+  document.getElementById('lightboxCounter').textContent = `${currentIndex+1} / ${galleries[currentGallery].length}`;
+}
+function navLightbox(dir){
+  const len = galleries[currentGallery].length;
+  currentIndex = (currentIndex + dir + len) % len;
+  document.getElementById('lightboxImg').classList.remove('zoomed');
+  updateLightbox();
+}
+function toggleZoom(){
+  document.getElementById('lightboxImg').classList.toggle('zoomed');
+}
+document.getElementById('lightbox').addEventListener('click',function(e){
+  if(e.target === this) closeLightbox();
+});
+document.addEventListener('keydown',function(e){
+  if(!document.getElementById('lightbox').classList.contains('active')) return;
+  if(e.key==='Escape') closeLightbox();
+  if(e.key==='ArrowRight') navLightbox(-1);
+  if(e.key==='ArrowLeft') navLightbox(1);
+});
+
+function selectPackage(packageKey){
+  const selected = packageCatalog[packageKey];
+  if(!selected) return;
+  selectedPackage = {key:packageKey,...selected};
+  const formatted = selected.price.toLocaleString('ar-YE');
+  document.getElementById('summaryPackage').textContent = `الباقة ${selected.name}`;
+  document.getElementById('summaryPrice').textContent = formatted;
+  document.getElementById('summaryTotal').textContent = formatted;
+  document.getElementById('paymentSection').classList.add('active');
+  document.getElementById('paymentSection').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function continuePackageBooking(e){
+  if(e) e.preventDefault();
+  const serviceSelect = document.getElementById('cService');
+  serviceSelect.value = `package:${selectedPackage.key}`;
+  document.getElementById('contact').scrollIntoView({behavior:'smooth',block:'start'});
+  setTimeout(()=>document.getElementById('cName').focus({preventScroll:true}),500);
+}
+
+async function handleContact(e){
+  e.preventDefault();
+  const form = e.currentTarget;
+  if(form.dataset.busy === 'true') return;
+  const name = document.getElementById('cName').value.trim();
+  const phone = document.getElementById('cPhone').value.trim();
+  const selectedService = document.getElementById('cService').value;
+  const packageKey = selectedService.startsWith('package:') ? selectedService.slice('package:'.length) : '';
+  const serviceLabel = document.getElementById('cService').selectedOptions[0].textContent.trim();
+  const targetWa = document.getElementById('cTargetWa').value;
+  const msg = document.getElementById('cMsg').value.trim();
+  const payload = {
+    name,
+    phone,
+    service: selectedService,
+    packageKey,
+    notes: msg,
+    whatsappNumber: targetWa,
+    website: document.getElementById('bookingWebsite').value
+  };
+  const submitButton = document.getElementById('bookingSubmitButton');
+  const originalButtonHtml = submitButton.innerHTML;
+  form.dataset.busy = 'true';
+  submitButton.disabled = true;
+  submitButton.textContent = 'جارٍ حفظ الطلب...';
+
+  const lines = [
+    'مرحباً معرض زفافي، أرغب في حجز موعد:',
+    `الاسم الكريم: ${name}`,
+    `رقم الهاتف: ${phone}`,
+    `نوع الخدمة: ${packageKey ? `${serviceLabel} - ${packageCatalog[packageKey]?.price.toLocaleString('ar-YE') || ''} ريال يمني` : serviceLabel}`,
+    msg ? `ملاحظات / موعد الزيارة: ${msg}` : ''
+  ].filter(Boolean);
+  const url = `https://wa.me/${targetWa}?text=${encodeURIComponent(lines.join('\n'))}`;
+
+  try{
+    const response = await fetch('/api/bookings',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(payload)
+    });
+    const result = await response.json().catch(()=>({}));
+    if(!response.ok || !result.ok) throw new Error(result.message || 'لم يتم حفظ الطلب. أعيدي المحاولة.');
+    showToast('تم حفظ طلبك','سيتم فتح واتساب لإرسال تفاصيل الحجز','success');
+    setTimeout(()=>window.location.assign(url),350);
+  }catch(error){
+    showToast('تعذّر حفظ الطلب',error.message || 'أعيدي المحاولة أو تواصلي هاتفياً.','error');
+    form.dataset.busy = 'false';
+    submitButton.disabled = false;
+    submitButton.innerHTML = originalButtonHtml;
+  }
+}
+
+function showToast(title,msg,type='success'){
+  const toast = document.getElementById('toast');
+  document.getElementById('toastTitle').textContent = title;
+  document.getElementById('toastMsg').textContent = msg;
+  toast.className = 'toast show' + (type==='error' ? ' error' : '');
+  toast.querySelector('i').className = type==='error' ? 'fas fa-exclamation-circle' : 'fas fa-check-circle';
+  setTimeout(()=>toast.classList.remove('show'),3500);
+}
+
+
+</script>
+</body>
+</html>
